@@ -1,0 +1,9 @@
+# Use LF for code and config files
+*.py text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.lock text eol=lf
+*.csv text eol=lf
+
+# Auto-detect binary files
+* text=auto
