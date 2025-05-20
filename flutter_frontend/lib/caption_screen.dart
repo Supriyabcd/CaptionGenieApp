@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../main.dart'; // Import the file containing MyAppState
 
 class CaptionScreen extends StatefulWidget {
-  const CaptionScreen({super.key});
+  final String caption;
+
+  const CaptionScreen({super.key, required this.caption});
 
   @override
   State<CaptionScreen> createState() => _CaptionScreenState();
@@ -10,7 +11,6 @@ class CaptionScreen extends StatefulWidget {
 
 class _CaptionScreenState extends State<CaptionScreen> {
   bool _isDarkMode = false;
-  String caption = "A cozy room with warm sunlight and a stylish chair.";
 
   @override
   Widget build(BuildContext context) {
@@ -32,15 +32,13 @@ class _CaptionScreenState extends State<CaptionScreen> {
             onChanged: (value) {
               setState(() {
                 _isDarkMode = value;
-                ThemeMode mode = _isDarkMode ? ThemeMode.dark : ThemeMode.light;
-                MyAppState.of(context)?.changeTheme(mode);
               });
             },
           ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
-              caption,
+              widget.caption,
               style: TextStyle(
                 fontSize: 18,
                 color: _isDarkMode ? Colors.white : Colors.black,
