@@ -6,15 +6,15 @@ This project combines a Flutter frontend and a FastAPI backend to create an imag
 
 ---
 
-## 🔧 How to Run
+## How to Run
 
-### 📋 Prerequisites
+### Prerequisites
 - **Python 3.8+**: Required for the FastAPI backend.
 - **Flutter SDK**: Required for the frontend. If you don't have Flutter installed, follow the setup instructions below.
 - A stable internet connection for downloading dependencies.
 - Access to a terminal (Command Prompt, PowerShell, or equivalent).
 
-### 📦 Project Setup
+### Project Setup
 
 #### 1. Update IP Address
 Update the IP address (your local IPv4) in the following places:
@@ -88,7 +88,7 @@ If you don't have Flutter installed:
 
 ---
 
-## 📝 Notes
+## Notes
 - Ensure the backend is running before starting the frontend.
 - If you encounter issues with Flutter, run `flutter doctor` to diagnose problems.
 - For development, you may need additional tools like Android Studio (for Android) or Xcode (for iOS) if targeting mobile devices.
