@@ -15,7 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   File? _image;
   bool _isLoading = false;
-  final String apiUrl = 'http://192.168.213.109:8000/generate_caption'; // Replace with your IPv4 address .
+  final String apiUrl = 'http://<yourIPaddress>/generate_caption'; // Replace with your IPv4 address .
 
   Future<void> _pickImage(ImageSource source) async {
     final image = await ImagePicker().pickImage(source: source);
