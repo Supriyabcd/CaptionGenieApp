@@ -1,6 +1,6 @@
 # RAG-based Image Captioning App
 
-This project combines a Flutter frontend and a FastAPI backend to create an image captioning application using Retrieval-Augmented Generation (RAG). The .zip file contains two main folders:
+This project combines a Flutter frontend and a FastAPI backend to create an image captioning application using Retrieval-Augmented Generation (RAG). The repo contains two main folders:
 - `flutter_frontend/`: Contains all Dart files and `frontend.bat` for the Flutter frontend.
 - `rag_pipeline/`: Contains the FastAPI backend files, including `main.py`, `requirements.txt`, and `backend.bat`.
 
@@ -13,6 +13,7 @@ This project combines a Flutter frontend and a FastAPI backend to create an imag
 - **Flutter SDK**: Required for the frontend. If you don't have Flutter installed, follow the setup instructions below.
 - A stable internet connection for downloading dependencies.
 - Access to a terminal (Command Prompt, PowerShell, or equivalent).
+- An Android/iOS phone on the same LAN connection as laptop in which .bat files are running 
 
 ### Project Setup
 
@@ -92,42 +93,3 @@ If you don't have Flutter installed:
 - Ensure the backend is running before starting the frontend.
 - If you encounter issues with Flutter, run `flutter doctor` to diagnose problems.
 - For development, you may need additional tools like Android Studio (for Android) or Xcode (for iOS) if targeting mobile devices.
-
-
-
-<!-- 
-# RAG-based Image Captioning App
-
-This project uses a Flutter frontend and a FastAPI backend.
-
----
-
-## 🔧 How to Run
-If you're running this project on your own machine, please update the IP address (your local IPv4) in the following places:
-
-In the Flutter frontend:
-Edit frontend/lib/home_screen.dart → replace apiBaseUrl with your machine's IP (found using ipconfig).
-
-In the RAG_pipeline\run_backend.bat :
-Ensure any hardcoded IP in uvicorn command is replaced with your current IPv4 address.
-
-You can find your IP address by running ipconfig (Windows) or ifconfig (Linux/Mac) and looking under Wireless LAN adapter Wi-Fi.
-
-### 📦 Backend (FastAPI)
-1. Open a terminal
-2. Navigate to `backend/`
-3. Run: `run_backend.bat`
-4. Your API will start at: `http://127.0.0.1:8000`
-
-### 📱 Frontend (Flutter)
-1. Open a terminal
-2. Navigate to `flutter_frontend/`
-3. Run: `run_frontend.bat`
-4. This will launch the Flutter app
-
----
-
-## 📝 Requirements
-
-- Python 3.8+
-- Flutter SDK installed and in PATH -->
