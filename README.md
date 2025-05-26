@@ -1,6 +1,6 @@
 # RAG-based Image Captioning App
 
-This project combines a Flutter frontend and a FastAPI backend to create an image captioning application using Retrieval-Augmented Generation (RAG). The repo contains two main folders:
+This project combines a Flutter frontend and a FastAPI backend to create an image captioning application using Retrieval-Augmented Generation (RAG). The app's purpose is to provide architectural and historical details for an input image of the facade of an Indian Monument. The repo contains two main folders:
 - `flutter_frontend/`: Contains all Dart files and `frontend.bat` for the Flutter frontend.
 - `rag_pipeline/`: Contains the FastAPI backend files, including `main.py`, `requirements.txt`, and `backend.bat`.
 
